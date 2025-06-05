@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Dashboard - Capto.ai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <h1><span class="logo-text">capto<span class="logo-dot">.</span>ai</span></h1>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="analytics-section">
+                <h2>Your Performance Overview</h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3>Total Requests</h3>
+                            <p class="analytics-value" id="requestVolume">Loading...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3>Total Earnings</h3>
+                            <p class="analytics-value">$<span id="earnings">Loading...</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="analyticsError" aria-live="polite" class="response-error" style="display: none;"></div>
+                
+                <button id="refreshAnalytics" class="refresh-button">
+                    <i class="fas fa-sync-alt"></i> Refresh Data
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Capto.ai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="supplier.js"></script>
+</body>
+</html>

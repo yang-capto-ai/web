@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Capto.ai - AI-Powered Assistance</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <h1><span class="logo-text">capto<span class="logo-dot">.</span>ai</span></h1>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="question-form-section" class="form-section">
+                <div class="section-header">
+                    <h2>Ask Our AI Assistant</h2>
+                    <div class="ai-badge">
+                        <i class="fas fa-robot"></i>
+                        <span>Powered by AI</span>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <div class="form-header">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Instant Response</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Advanced AI</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="customerQuestionForm">
+                        <div class="form-group">
+                            <label for="questionText">
+                                <i class="fas fa-comment-dots"></i>
+                                Your Question or Request
+                            </label>
+                            <div class="textarea-container">
+                                <textarea 
+                                    id="questionText" 
+                                    name="questionText" 
+                                    rows="7" 
+                                    required 
+                                    placeholder="How can we assist you today? Please provide as much detail as possible..."
+                                ></textarea>
+                                <div class="textarea-footer">
+                                    <span class="ai-typing">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Question
+                        </button>
+                </form>
+                
+                    <div id="responseMessage" class="response-message" aria-live="polite"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Capto.ai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="provider.js"></script> 
+</body>
+</html>
